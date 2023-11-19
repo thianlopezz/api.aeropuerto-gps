@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  api.aeropuerto-gps:
+  api.aeropuertos-gps:
     # image: ${IMAGE_URL}
     build:
       context: .
       dockerfile: dockerfile
-    container_name: api.aeropuerto-gps
+    container_name: api.aeropuertos-gps
     networks:
       - proxy
     env_file:
@@ -19,7 +19,7 @@ services:
       - 'traefik.enable=true'
       - 'traefik.docker.network=proxy'
       - 'traefik.http.routers.phonemedica-secure.entrypoints=websecure'
-      - 'traefik.http.routers.phonemedica-secure.rule=Host(`api.aeropuerto-gps.thianlopezz.com`)'
+      - 'traefik.http.routers.phonemedica-secure.rule=Host(`api.aeropuertos-gps.thianlopezz.com`)'
       - 'traefik.http.routers.phonemedica-secure.service=phonemedica'
       - 'traefik.http.services.phonemedica.loadbalancer.server.port=3000'
 

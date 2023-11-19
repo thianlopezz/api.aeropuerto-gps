@@ -7,7 +7,7 @@ RUN apk update && \
     apk upgrade && \
     apk add chromium
 #Defino el directorio en donde se va a ejecutar mi configuración dentro del contenedor
-WORKDIR /home/api.aeropuerto-gps
+WORKDIR /home/api.aeropuertos-gps
 #Copio el archivo package.js para posteriormente instalar las dependencias de mi repositorio
 COPY package.json ./package.json
 COPY package-lock.json ./package-lock.json

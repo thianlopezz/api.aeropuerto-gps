@@ -10,6 +10,6 @@ docker compose up -d
 ## Usando Dockerfile
 
 ```bash
-docker build . -t thianlopezz/api.aeropuerto-gps
-docker run --name api.aeropuerto-gps -p 3000:3000 -d thianlopezz/api.aeropuerto-gps
+docker build . -t thianlopezz/api.aeropuertos-gps
+docker run --name api.aeropuertos-gps -p 3000:3000 -d thianlopezz/api.aeropuertos-gps
 ```

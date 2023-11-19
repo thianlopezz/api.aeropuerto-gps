@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       //Configuramos el nombre del proceso que tendrá mi aplicación
-      name: 'api.aeropuerto-gps',
+      name: 'api.aeropuertos-gps',
       //Difinimos el script que vamos a ejecutar
       script: 'dist/index.js',
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
